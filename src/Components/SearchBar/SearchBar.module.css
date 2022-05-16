@@ -1,0 +1,36 @@
+.wrap{
+    width: 30%;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 1px solid rgb(10, 78, 75);
+    border-right: none;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: rgb(19, 51, 82);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.searchTerm:focus{
+    color: rgb(19, 51, 82);
+}
+
+.searchButton {
+    width: auto;
+    padding: 5px;
+    border: 1px solid rgb(10, 78, 75);
+    background: rgb(10, 78, 75);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
