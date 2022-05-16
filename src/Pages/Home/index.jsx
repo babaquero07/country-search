@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SearchBar from "../../Components/SearchBar";
 import Button from "../../Components/Button";
+import Spinner from "../../Components/Spinner";
 import style from "./HomePage.module.css";
 import { gql, useQuery } from "@apollo/client";
 
@@ -30,7 +31,7 @@ const HomePage = () => {
     setCountries(data);
   }, [data]);
 
-  if (loading) return <h1>Loading...</h1>;
+  if (loading) return <Spinner />;
 
   return (
     <div className={style.homeContainer}>
