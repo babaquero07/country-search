@@ -41,7 +41,10 @@ const HomePage = () => {
 
   const updateInput = (input) => {
     const filtered = data.countries.filter((country) => {
-      return country.name.toLowerCase().includes(input.toLowerCase());
+      return (
+        country.name.toLowerCase().slice(0, input.length) ===
+        input.toLowerCase()
+      );
     });
     setInput(input);
     setCountries(filtered);
