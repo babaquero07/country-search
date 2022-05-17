@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Button = ({
   text,
@@ -7,14 +7,18 @@ const Button = ({
   setCountriesByContinent,
   setCountriesByLanguage,
 }) => {
+  const [style, setStyle] = useState("btn");
+
   return (
     <button
-      className="btn"
-      onClick={() =>
+      className={style}
+      onClick={() => {
+        style === "btn" ? setStyle("btnActive") : setStyle("btn");
+
         setCountriesByContinent
           ? setCountriesByContinent(!countriesByContinent)
-          : setCountriesByLanguage(!countriesByLanguage)
-      }
+          : setCountriesByLanguage(!countriesByLanguage);
+      }}
     >
       {text}
     </button>
