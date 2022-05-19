@@ -9,7 +9,7 @@ You will also see any lint errors in the console.
 # Desafío para Software Engineers
 
 - Nombre postulante: Brayan Alexander Baquero Useche
-- Link a la app en producción: [LINK DEL DEPLOY]
+- Link a la app en producción: https://kimchechallenge-umber.vercel.app/
 
 ## Pregunta
 
