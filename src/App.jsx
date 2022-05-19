@@ -1,4 +1,6 @@
 import React from "react";
+import HomePage from "./Pages/Home";
+
 // import { gql, useQuery } from "@apollo/client";
 
 // const countriesList = gql`
@@ -18,16 +20,7 @@ const App = () => {
   //   return <p>{error ? error.message : "Loading..."}</p>;
   // }
 
-  return (
-    <>
-      <h2>
-        My first Apollo app{" "}
-        <span role="img" aria-label="Rocket">
-          🚀
-        </span>
-      </h2>
-    </>
-  );
+  return <HomePage />;
 };
 
 export default App;

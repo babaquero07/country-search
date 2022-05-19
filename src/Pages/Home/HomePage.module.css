@@ -1,0 +1,23 @@
+.homeContainer {
+    width: 100vw;
+    /* height: 100vh; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 1px solid goldenrod; */
+}
+
+.homeContainer__content {
+    width:100%;
+    padding: 1rem 4rem;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.HomeContainer__countryList {
+    /* border: 1px solid greenyellow; */
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
